@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="BigPane" prefHeight="735.0" prefWidth="1372.0" style="-fx-background-color: linear-gradient(to right, #c9ffbf, #ffafbd);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.library.controller.DashboardForm2Controller">
+   <children>
+      <Pane prefHeight="56.0" prefWidth="1374.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);;">
+         <children>
+            <Text fill="#ebebeb" layoutX="4.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Dashboard">
+               <font>
+                  <Font name="Courier New Bold" size="43.0" />
+               </font>
+            </Text>
+            <Text fx:id="TxtDate" fill="WHITE" layoutX="1081.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="277.13671875">
+               <font>
+                  <Font name="Consolas" size="32.0" />
+               </font>
+            </Text>
+            <Label fx:id="LblDdate" layoutX="699.0" layoutY="-4.0" prefHeight="59.0" prefWidth="248.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="56.0" prefHeight="676.0" prefWidth="186.0" style="-fx-background-color: #57606f;">
+         <children>
+            <ImageView accessibleRole="BUTTON" fitHeight="75.0" fitWidth="74.0" layoutX="44.0" layoutY="-3.0" onMouseClicked="#ImgBtnDashboardOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/l.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="8.0" layoutY="81.0" onAction="#BtnAddBookOnAction" prefHeight="98.0" prefWidth="173.0" style="-fx-background-radius: 10; -fx-border-radius: 20; -fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Manage Book" textFill="#f8f8f8" wrapText="true">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/ad.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.44285714285714284" radius="0.5">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="6.0" layoutY="199.0" onAction="#BtnAddNewspaperOnAction" prefHeight="98.0" prefWidth="173.0" style="-fx-background-radius: 10; -fx-border-radius: 20; -fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Manage Newspaper" textFill="#f8f8f8" wrapText="true">
+               <font>
+                  <Font name="Consolas Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/r.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="#eeeeee" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="6.0" layoutY="317.0" onAction="#BtnAddSuplierOnAction" prefHeight="98.0" prefWidth="173.0" style="-fx-background-radius: 10; -fx-border-radius: 20; -fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Manage Suplier" textFill="#f8f8f8" wrapText="true">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/su2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5111111111111111" centerY="0.44285714285714284" radius="0.5">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="9.0" layoutY="431.0" onAction="#BtnAddMemberOnAction" prefHeight="98.0" prefWidth="173.0" style="-fx-background-radius: 10; -fx-border-radius: 20; -fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Manage Member" textFill="#f8f8f8" wrapText="true">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/mem.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="6.0" layoutY="545.0" onAction="#BtnLogoutOnAction" prefHeight="98.0" prefWidth="173.0" style="-fx-background-radius: 10; -fx-border-radius: 20; -fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Logout" textFill="#f8f8f8" wrapText="true">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/out.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.44285714285714284" radius="0.5">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Label layoutX="206.0" layoutY="95.0" prefHeight="180.0" prefWidth="266.0" style="-fx-background-color: #e15f41; -fx-background-radius: 10; -fx-border-radius: 10;" />
+      <Label layoutX="787.0" layoutY="95.0" prefHeight="180.0" prefWidth="274.0" style="-fx-background-color: #fc5c65; -fx-background-radius: 10; -fx-border-radius: 10;" />
+      <Label layoutX="1086.0" layoutY="93.0" prefHeight="180.0" prefWidth="266.0" style="-fx-background-color: #fed330; -fx-background-radius: 10; -fx-border-radius: 10;" />
+      <Text fill="WHITE" layoutX="266.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="54.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="794.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Newspapers">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="47.0" />
+         </font>
+      </Text>
+      <Label layoutX="496.0" layoutY="95.0" prefHeight="180.0" prefWidth="266.0" style="-fx-background-color: #0652DD; -fx-background-radius: 10; -fx-border-radius: 10;" />
+      <Label fx:id="LblBook" layoutX="363.0" layoutY="144.0" prefHeight="135.0" prefWidth="102.0" text="45" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="85.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblNewspaper" layoutX="953.0" layoutY="141.0" prefHeight="135.0" prefWidth="102.0" text="45" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="85.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblMembers" layoutX="651.0" layoutY="141.0" prefHeight="135.0" prefWidth="102.0" text="45" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="85.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblSuppliers" layoutX="1236.0" layoutY="144.0" prefHeight="135.0" prefWidth="102.0" text="45" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="85.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="204.0" fitWidth="236.0" layoutX="232.0" layoutY="345.0" onMouseClicked="#ImgBtnAddBookOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/adb.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="204.0" fitWidth="236.0" layoutX="840.0" layoutY="348.0" onMouseClicked="#ImgBtnAddNewspaperOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/aadn.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="204.0" fitWidth="236.0" layoutX="555.0" layoutY="341.0" onMouseClicked="#ImgBtnAddMemberOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/aadm.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="204.0" fitWidth="236.0" layoutX="1112.0" layoutY="344.0" onMouseClicked="#ImgBtnAddSupplierOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/adds.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text fill="#e85e5e" layoutX="601.0" layoutY="630.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Employee Dashboard">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="657.0" layoutY="655.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select options for ADD operations">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1113.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suppliers">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="54.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="521.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Members">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="54.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="NewPane" layoutX="189.0" layoutY="54.0" prefHeight="680.0" prefWidth="1194.0" />
+   </children>
+</AnchorPane>

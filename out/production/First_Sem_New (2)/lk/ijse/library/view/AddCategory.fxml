@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="519.0" prefWidth="626.0" style="-fx-background-color: white; -fx-background-radius: 50; -fx-border-radius: 50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.library.controller.AddCategoryController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="248.0" layoutY="395.0" onAction="#BtnAddCategoryOnAction" prefHeight="35.0" prefWidth="132.0" style="-fx-background-color: #fff200;" text="ADD">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#f80000" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <TextField fx:id="TxtBookCategoryID" layoutX="190.0" layoutY="191.0" prefHeight="35.0" prefWidth="220.0" promptText="XXXX" style="-fx-border-radius: 28; -fx-border-color: black; -fx-background-radius: 28; -fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="205.0" layoutY="192.0" opacity="0.94" stroke="WHITE" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="6.0" text="Category ID" wrappingWidth="107.41797563061118">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TxtBookCategoryName" layoutX="190.0" layoutY="254.0" prefHeight="35.0" prefWidth="220.0" promptText="XXXXXXXXXX" style="-fx-border-radius: 28; -fx-border-color: black; -fx-background-radius: 28;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="199.0" layoutY="257.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Category Name" wrappingWidth="115.41797824203968">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Pane layoutX="-11.0" layoutY="53.0" prefHeight="180.0" prefWidth="0.0" />
+      <JFXButton layoutX="425.0" layoutY="196.0" onAction="#NewCetegoryIdOnAction" style="-fx-background-color: red;" text="ID" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

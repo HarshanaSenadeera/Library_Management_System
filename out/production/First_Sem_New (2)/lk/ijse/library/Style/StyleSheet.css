@@ -1,0 +1,5 @@
+.sidebarItem:hover {
+    -fx-background-color: linear-gradient(to right, #ef3b36, #ffffff);
+    -fx-border-color: TRANSPARENT;
+    -fx-border-width: 0px 0px 0px 6px;
+}

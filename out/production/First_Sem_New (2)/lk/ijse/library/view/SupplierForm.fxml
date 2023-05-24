@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="673.0" prefWidth="1185.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.library.controller.SupplierController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="314.0" layoutY="22.0" onAction="#SupplierAddOnAction" prefHeight="62.0" prefWidth="227.0" style="-fx-background-color: #fff200;" text="ADD">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="606.0" layoutY="22.0" onAction="#SupplierUpdateOnAction" prefHeight="62.0" prefWidth="227.0" style="-fx-background-color: #3ae374;" text="UPDATE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#f80000" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="901.0" layoutY="24.0" onAction="#SupplierDeleteOnAction" prefHeight="62.0" prefWidth="227.0" ripplerFill="#f2f2f2" style="-fx-background-color: #ff3838;" text="DELETE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="TxtSupplierId" layoutX="74.0" layoutY="124.0" onAction="#TxtSuplierOnAction" prefHeight="47.0" prefWidth="301.0" promptText="XXXX" style="-fx-border-radius: 28; -fx-border-color: black; -fx-background-radius: 28;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="87.0" layoutY="126.0" opacity="0.94" stroke="WHITE" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="6.0" text="Supplier ID" wrappingWidth="83.41797563061118">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TxtSupplierNic" layoutX="869.0" layoutY="129.0" prefHeight="47.0" prefWidth="301.0" promptText="XXXXXXXXXXXX" style="-fx-border-radius: 28; -fx-border-color: black; -fx-background-radius: 28;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="882.0" layoutY="132.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="NIC" wrappingWidth="83.41796875">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TxtSupplierType" layoutX="78.0" layoutY="215.0" prefHeight="47.0" prefWidth="301.0" promptText="XXXXXXX" style="-fx-border-radius: 28; -fx-border-color: black; -fx-background-radius: 28;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="101.0" layoutY="216.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Type" wrappingWidth="45.41796875">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TxtSupplierQty" layoutX="476.0" layoutY="217.0" prefHeight="47.0" prefWidth="301.0" promptText="XXXX" style="-fx-border-radius: 28; -fx-border-color: black; -fx-background-radius: 28;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="504.0" layoutY="222.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="QTY" wrappingWidth="83.41797824203968">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TxtSupplierTpNo" layoutX="867.0" layoutY="221.0" prefHeight="47.0" prefWidth="301.0" promptText="XXX XXXXXXX" style="-fx-border-radius: 28; -fx-border-color: black; -fx-background-radius: 28;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="876.0" layoutY="225.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="TP NO" wrappingWidth="93.41796875">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TxtSupplierName" layoutX="480.0" layoutY="128.0" prefHeight="47.0" prefWidth="301.0" promptText="Mr/Mis XXXXXXXXXXXXXX" style="-fx-border-radius: 28; -fx-border-color: black; -fx-background-radius: 28;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="494.0" layoutY="132.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Name" wrappingWidth="73.41797241568565">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TableView fx:id="TblSupplierData" layoutX="55.0" layoutY="289.0" prefHeight="341.0" prefWidth="1064.0">
+        <columns>
+          <TableColumn fx:id="ColSupplierId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="ColSupplierName" prefWidth="273.33331298828125" text="Name" />
+            <TableColumn fx:id="ColSupplierNic" prefWidth="234.0" text="NIC" />
+            <TableColumn fx:id="ColSupplierType" prefWidth="177.0" text="Type" />
+            <TableColumn fx:id="ColSupplierQty" prefWidth="126.0" text="QTY" />
+            <TableColumn fx:id="ColSupplierTpNo" prefWidth="180.0" text="TP NO" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="385.0" layoutY="135.0" onAction="#NewSIDOnAction" prefHeight="25.0" prefWidth="43.0" style="-fx-background-color: red;" text="ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="450.0" layoutY="643.0" prefHeight="47.0" prefWidth="123.0" text="TOTAL Suppliers:" textFill="#1cd70f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblTotalSuppliers" layoutX="586.0" layoutY="642.0" prefHeight="47.0" prefWidth="94.0" text=" " textFill="#1cd70f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

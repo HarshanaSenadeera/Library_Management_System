@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="519.0" prefWidth="626.0" style="-fx-background-color: white; -fx-background-radius: 50; -fx-border-radius: 50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.library.controller.AddAuthorController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="253.0" layoutY="406.0" onAction="#BtnAddAuhtorOnAction" prefHeight="35.0" prefWidth="132.0" style="-fx-background-color: #fff200;" text="ADD">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#f80000" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <TextField fx:id="TxtAuthorId" layoutX="209.0" layoutY="118.0" prefHeight="35.0" prefWidth="220.0" promptText="XXXX" style="-fx-border-radius: 28; -fx-border-color: black; -fx-background-radius: 28; -fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="222.0" layoutY="120.0" opacity="0.94" stroke="WHITE" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="6.0" text="Author ID" wrappingWidth="83.41797563061118">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TxtAuthorSubject" layoutX="209.0" layoutY="240.0" prefHeight="35.0" prefWidth="220.0" promptText="XXXX.XX" style="-fx-border-radius: 28; -fx-border-color: black; -fx-background-radius: 28;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="224.0" layoutY="242.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Subject" wrappingWidth="83.41796875">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TxtAuthorTpNo" layoutX="209.0" layoutY="302.0" prefHeight="35.0" prefWidth="220.0" promptText="XXXX" style="-fx-border-radius: 28; -fx-border-color: black; -fx-background-radius: 28;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="222.0" layoutY="306.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Tp No" wrappingWidth="83.41798084974289">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TxtAuthorName" layoutX="209.0" layoutY="181.0" prefHeight="35.0" prefWidth="220.0" promptText="XXXXXXXXXX" style="-fx-border-radius: 28; -fx-border-color: black; -fx-background-radius: 28;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="222.0" layoutY="184.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Aythor Name" wrappingWidth="108.41797824203968">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Pane layoutX="-11.0" layoutY="53.0" prefHeight="180.0" prefWidth="0.0" />
+      <JFXButton layoutX="437.0" layoutY="131.0" onAction="#NewAuthorIDOnAction" style="-fx-background-color: red;" text="ID" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
